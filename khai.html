@@ -1,0 +1,124 @@
+<!--code for color changing in sir file-->
+
+
+<!--<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <div id="main" style="height: 100vh; width: 100%">
+      <h2>Welcome To My WEB!</h2>
+      <div id="box">
+         <p>Color:<input type="text" id="color" /></p> 
+        <p>Color:<input type="color" id="color" /></p>
+        <p>BG-Color:<input type="color" id="bgcolor" /></p>
+        <button id="btn" onclick="applyColor()">Apply</button>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function applyColor() {
+        //get color and bgcolor
+        var color = document.getElementById("color").value;
+        var bgcolor = document.getElementById("bgcolor").value;
+
+        //apply these to main div
+
+        var ele = document.getElementById("main");
+        if (color != bgcolor) {
+          ele.style.color = color;
+          ele.style.backgroundColor = bgcolor;
+        } else {
+          alert("please choose different color for text and background");
+        }
+      }
+    </script>
+  </body>
+</html>-->
+
+<!-- this is anothere file-->
+<!--<html>
+  <head> </head>
+  <body
+    onload="alert('Welcome to my Web')"
+    onunload="alert('leaving the site?')"
+  >
+    <div>
+      <label
+        ><input
+          type="radio"
+          name="clg"
+          onclick="handleClick(1)"
+          value="NCIT"
+        />NCIT</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="clg"
+          onclick="handleClick(2)"
+          value="Kathford"
+        />Kathford</label
+      >
+      <label
+        ><input
+          type="radio"
+          name="clg"
+          onclick="handleClick(3)"
+          value="Khopa"
+        />Khopa</label
+      >
+    </div>
+    <script>
+      function handleClick(val) {
+        switch (val) {
+          case 1:
+            alert("NCIT is affiliated to Pokhara Uni!");
+            break;
+
+          case 2:
+            alert("Kathford is affiliated to Tribhuvan Uni!");
+            break;
+
+          case 3:
+            alert("Khowa is affiliated to Purbanchal Uni!");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>-->
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      id="box"
+      style="display: inline; position: relative; top: 50; left: 10">
+      <img src="../HTML/Images/html5.png" />
+
+      <div style="margin-top: 100">
+        <p>
+          X-coord:
+          <input type="text" id="left" />
+        </p>
+        <p>
+          Y-coord:
+          <input type="text" id="top" />
+        </p>
+      </div>
+      <button id="btn" onclick="handleMove()">Move</button>
+    </div>
+    <script>
+      function handleMove() {
+        var top = document.getElementById("top").value;
+        var left = document.getElementById("left").value;
+
+        var ele = document.getElementById("box");
+        ele.style.top = top;
+        ele.style.left = left;
+      }
+    </script>
+  </body>
+</html>

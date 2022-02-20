@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>you can do that easily....</title>
+</head>
+<body>
+    <div id="box" style="display: inline; height:200px; width:200px; border:5px solid red; position:relative; top:50; left:50;">
+        <img src=".//_DSC0834.JPG" height="200px" width="200px">
+        <p>X:<input type="text" id="x"></p>
+        <p>Y:<input type="text" id="y"></p>
+        <button id="button" style="margin:10px" onclick="change()"> apply</button>
+        
+
+
+    
+    </div>
+    <script>
+        function change(){
+            var a= document.getElementById("x").value;
+            var b= document.getElementById("y").value;
+            var c= document.getElementById("box");
+            c.style.top=a;
+            c.style.left=b;
+            
+            
+
+        }
+
+    </script>
+</body>
+</html>

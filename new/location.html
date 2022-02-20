@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>location tracker</title>
+    </head>
+    <style>
+        #hello{
+            height:500px;
+            width:500px;
+            border:5px solid red;
+        }
+    </style>
+    <body>
+        <p>Screenx:<input type="text" id="screenx" readonly="readonly"></p>
+        <p>Screeny:<input type="text" id="screeny" readonly="readonly"></p>
+        <p>Clientx:<input type="text" id="clientx" readonly="readonly"></p>
+        <p>Clienty:<input type="text" id="clienty" readonly="readonly"></p>
+        <div id="hello">
+
+
+        </div>
+    </body>
+
+    <script>
+        document.getElementById("hello").addEventListener("click",fxn,true);
+        function fxn(e){
+            document.getElementById("screenx").value=e.screenX;
+            document.getElementById("screeny").value=e.screenY;
+            document.getElementById("clientx").value=e.clientX;
+            document.getElementById("clienty").value=e.clientY;
+            
+
+
+        }
+    </script> 
+
+</html>

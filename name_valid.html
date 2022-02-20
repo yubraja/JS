@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    
+</head>
+<body>
+    <input type="text" name="uname" id="name" onblur="ram()">
+</body>
+<script>
+function ram(){            
+    console.log("hi")
+    a= document.getElementById("name").value;
+    var patt= /^[A-Za-z]+ ([A-Za-z]+(\.)?\s)?[A-Za-z]+$/;
+    if (a.match(patt) !=null)
+    {
+        console.log("it is valid");
+        alert("it's a valid")
+    }
+    else{
+        console.log("please enter a valid name");
+        alert("not valid")
+    }
+}
+</script>
+</html>

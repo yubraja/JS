@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>
+            DIGITAL CLOCK
+        </title>
+        <style>
+            body{
+                background-color: aquamarine;
+            }
+            #clockarea{
+                position:relative;
+                top:30%;
+                left:35%;
+                background-color: black;
+            }
+            #content{
+                position:relative;
+                top:31%;
+                left:10%;
+                color:rgb(33, 219, 243);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding:2px;
+            }
+            #hour{
+                font-size:50px;
+                border:2px solid rgb(230, 46, 247);
+            }
+            #min{
+                font-size:50px;
+                border:1px solid rgb(230, 46, 247);
+            }
+            #sec{
+                font-size:50px;
+                border:1px solid rgb(230, 46, 247);
+            }
+            #diem{
+
+                
+                font-size:40px;
+                
+            }
+            #clockarea{
+                border:5px dashed salmon;
+                height:200px;
+                width:300px;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+    
+            
+        <div id="clockarea" >
+            
+            <div id="content">
+                <span id="hour"></span>
+                <span id="min"></span>
+                <span id="sec"></span>
+                <span id="diem"></span>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function time()
+        {
+            var cdate=new Date();
+            var hour=cdate.getHours();
+            var min=cdate.getMinutes();
+            var sec=cdate.getSeconds();
+            var diem="am";
+
+            if (hour==0)
+            {
+                hour=12;
+            }
+            if(hour>12)
+            {
+                hour=hour-12;
+                diem="pm";
+
+            }
+            if(hour<10)
+            {
+                hour="0"+hour;
+            }
+            if(min<10)
+            {
+                min="0"+min;
+
+            }
+            if(sec<10)
+            {
+                sec="0"+sec;
+
+            }
+
+            document.getElementById("hour").innerHTML=hour+":";
+            document.getElementById("min").innerHTML=min+":";
+            document.getElementById("sec").innerHTML=sec;
+            document.getElementById("diem").innerHTML=diem;
+
+        }
+        setInterval(time,1000);
+    </script>
+</html>

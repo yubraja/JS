@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="whole" style="height:100vh; width:100%;">
+        <form>
+            <p>COLOR:<input id="color" type="color"></p>
+            <p>BACKGROUND-COLOR:<input id="bg-color" type="color"></p>
+            <button id="button" onclick="acolor()" type="button">Apply</button>
+
+        </form>
+
+
+    </div>
+    <script type="text/javascript">
+        
+        function acolor(){
+            var a=document.getElementById("color").value;
+            var b=document.getElementById("bg-color").value;
+            if (a!=b)
+            {
+
+            
+
+                document.getElementById("whole").style.color=a;
+                document.getElementById("whole").style.backgroundColor=b;
+            }
+            else{
+                alert("please choose different color ")
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+</head>
+<body>
+    <form id="form" action="abc.php" method="post">
+        <p>Name:<input type="text" id="name"></p>
+        <p>Pass:<input type='password' id="pass"></p>
+        <p>Re-Pass:<input type='password' id="repass"></p>
+        <input type="submit" value="submit">
+</form>
+<script>
+    document.getElementById("form").onsubmit=validate;
+    function validate()
+    {
+        console.log("hello")
+        var a=document.getElementById("pass").value;
+        var b=document.getElementById("repass").value;
+        if (a=="" || b=="")
+        {
+            alert("password can't be empty");
+            return False;
+        }
+        else if (a!=b)
+        {
+            alert('passwords not matche');
+            return False;
+
+        }
+        else {
+            alert("password matched");
+            return True;
+        }
+    }
+
+
+</script>
+</body>
+</html>

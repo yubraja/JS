@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIBILITY</title>
+</head>
+<body>
+    <div id="box" style="visibility: visible;">
+        <img src="_DSC0834.JPG" id="img" height=400 width=500>
+
+    </div>
+    <button id="button" onclick="toogledisplay()">Hide/Show</button>
+</body>
+<script>
+     
+    function toogledisplay()
+    {
+        console.log("darshan buwa")
+        var a=document.getElementById("box");
+
+        a.style.visibility=="visible"?a.style.visibility="hidden":a.style.visibility="visible";
+
+    }
+
+
+</script>
+</html>

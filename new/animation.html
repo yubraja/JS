@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        #container{
+            height:500px;
+            width:500px;
+            background-color:green;
+
+
+        }
+        #mover{
+            height:50px;
+            width:50px;
+            background-color: red;
+            position:absolute;
+            top:10px;
+            left:20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="mover">
+
+        </div>
+
+    </div>
+    
+    
+</body>
+<script>
+    document.getElementById("container").addEventListener("click",fxn,true);
+    function fxn(e)
+    {
+        var x=e.clientX-50;
+        var y=e.clientY-50;
+        // var ele=document.getElementById("mover");
+        document.getElementById("mover").style.top=y+"px";
+        document.getElementById("mover").style.left=x+"px";
+
+
+
+        console.log(x,y);
+
+    }
+    
+</script>
+
+</html>

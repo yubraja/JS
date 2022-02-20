@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>S.N</th>
+            <th>Item</th>
+            <th>QTY</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Phone</td>
+            <td><input id="qph" type="text"></td>
+            <td><input id="pph" type="text" onkeyup="calc()"o></td>
+            <td><input id="tph" type="text" onfocus="this.blur()"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>PC</td>
+            <td><input id="qpc" type="text"></td>
+            <td><input id="ppc" type="text" onkeyup="calc()"></td>
+            <td><input id="tpc" type="text" onfocus="this.blur()"></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <button type="button"  id="button" onclick="calc()">Total</button></td>
+            <td><input id="ttotal"onfocus="this.blur()"></td>
+        </tr>
+    </table>
+    <script src="table_validate.js"></script>
+</body>
+</html>
